@@ -1,0 +1,16 @@
+numpy
+h5py
+scikit-learn
+lightgbm
+pyyaml
+matplotlib
+rasterio
+geopandas
+shapely
+sqlalchemy
+psycopg2-binary
+geoalchemy2
+torch
+segmentation-models-pytorch
+terratorch
+pytest

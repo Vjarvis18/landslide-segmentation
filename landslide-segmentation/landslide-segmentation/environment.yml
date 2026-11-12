@@ -1,0 +1,22 @@
+name: l4s
+channels: [conda-forge]
+dependencies:
+  - python=3.11
+  - numpy
+  - h5py
+  - scikit-learn
+  - lightgbm
+  - pyyaml
+  - matplotlib
+  - rasterio
+  - geopandas
+  - shapely
+  - sqlalchemy
+  - psycopg2
+  - geoalchemy2
+  - pytest
+  - pip
+  - pip:
+      - torch
+      - segmentation-models-pytorch
+      - terratorch

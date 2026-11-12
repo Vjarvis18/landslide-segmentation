@@ -1,0 +1,17 @@
+data_dir: data/raw/TrainData
+splits: data/processed/splits.json
+model: lightgbm          # or random_forest
+pixels_per_patch: 2000   # stratified sampling to keep RAM bounded
+landslide_fraction: 0.5  # oversample the minority class
+seed: 42
+lightgbm:
+  n_estimators: 500
+  learning_rate: 0.05
+  num_leaves: 63
+  class_weight: balanced
+random_forest:
+  n_estimators: 300
+  max_depth: 20
+  n_jobs: -1
+  class_weight: balanced
+out_dir: outputs/baseline

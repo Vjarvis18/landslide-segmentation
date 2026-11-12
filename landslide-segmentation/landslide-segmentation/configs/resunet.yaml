@@ -1,0 +1,13 @@
+data_dir: data/raw/TrainData
+splits: data/processed/splits.json
+arch: resunet
+encoder: resnet34
+encoder_weights: imagenet  # first conv re-initialised for 14 channels
+in_channels: 14
+epochs: 60
+batch_size: 16
+lr: 0.0003
+loss: dice_bce
+augment: true
+seed: 42
+out_dir: outputs/resunet
